@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qzu-kY-RbE">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event View Controller-->
+        <scene sceneID="4uj-Fy-r6e">
+            <objects>
+                <viewController id="qzu-kY-RbE" customClass="EventViewController" customModule="nassi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PZf-ex-Whe"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Te-94-IIN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="csu-WW-ZAg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tg5-ki-wQ3">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="x6O-1v-ZoK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD5-vv-C3m">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="168"/>
+                                                <state key="normal" image="unchi_character"/>
+                                                <connections>
+                                                    <action selector="tapPoopButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="KRW-sx-eB4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htR-jF-8yB">
+                                                <rect key="frame" x="160" y="0.0" width="160" height="168"/>
+                                                <state key="normal" image="syoubenkozou"/>
+                                                <connections>
+                                                    <action selector="tapSweatDropsButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="zFM-WQ-ZdB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QeD-uY-unw">
+                                        <rect key="frame" x="0.0" y="168" width="320" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dD-Go-KcN">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="168"/>
+                                                <state key="normal" image="right_sweets_mizufusen_icecream"/>
+                                                <connections>
+                                                    <action selector="tapLeftBreastFeedingButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="Pdc-LX-4dx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h13-7P-YlA">
+                                                <rect key="frame" x="160" y="0.0" width="160" height="168"/>
+                                                <state key="normal" image="left_sweets_mizufusen_icecream"/>
+                                                <connections>
+                                                    <action selector="tapRightBreastFeedingButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="jPe-9I-65Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXh-kf-DMT">
+                                        <rect key="frame" x="0.0" y="336" width="320" height="168"/>
+                                        <state key="normal" image="baby_honyubin"/>
+                                        <connections>
+                                            <action selector="tapBabyBottle80mlButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="K3o-Ff-ovo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tg5-ki-wQ3" firstAttribute="leading" secondItem="csu-WW-ZAg" secondAttribute="leading" id="AOM-Nc-Ypl"/>
+                            <constraint firstItem="5Te-94-IIN" firstAttribute="top" secondItem="Tg5-ki-wQ3" secondAttribute="bottom" id="VKf-px-Ff0"/>
+                            <constraint firstAttribute="trailing" secondItem="Tg5-ki-wQ3" secondAttribute="trailing" id="nhK-Mu-B9K"/>
+                            <constraint firstItem="Tg5-ki-wQ3" firstAttribute="top" secondItem="PZf-ex-Whe" secondAttribute="bottom" id="tBo-Gs-uVj"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBm-Wt-p59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074.375" y="261.97183098591552"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baby_honyubin" width="100" height="100"/>
+        <image name="left_sweets_mizufusen_icecream" width="100" height="100"/>
+        <image name="right_sweets_mizufusen_icecream" width="100" height="100"/>
+        <image name="syoubenkozou" width="100" height="100"/>
+        <image name="unchi_character" width="100" height="100"/>
+    </resources>
+</document>
