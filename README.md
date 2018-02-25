@@ -6,7 +6,7 @@
 
 ## 何が出来る？
 
-<img src="https://github.com/tamadon/nassi/blob/media/media/home_screenshot.png" width="320">
+<img src="https://github.com/tamadon/nassi/blob/media/media/ss.png" width="320">
 
 * 基本1タップ、多くても2タップで子供のイベント（ミルク、おむつ替え）をSlackに通知出来る
 * Slackへの通知をHookしてGoogle スプレッドシートに記録
