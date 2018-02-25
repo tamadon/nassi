@@ -17,10 +17,11 @@
 [子育てエンジニアの家庭内生存戦略](https://speakerdeck.com/tamadon/zi-yu-teenziniafalsejia-ting-nei-sheng-cun-zhan-lue)
 
 ## How to Build
-以下の情報を.envファイルに登録してビルド時に呼び出すようにしています
-（書き方は.env.sampleを参考にしてください）
-※このファイルはgit管理しないでください
+以下の情報を`ios/.env`に登録してビルド時に呼び出すようにしています
 
-SlackのWebHookURL
-Slack起動用のURLスキーム
-スプレッドシート起動用のURLスキーム
+* SlackのWebHookURL
+* Slack起動用のURLスキーム
+* スプレッドシート起動用のURLスキーム
+
+（書き方は`ios/.env.sample`を参考にしてください）
+`ios/.env`はgit管理しないでください
