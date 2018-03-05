@@ -47,28 +47,47 @@
                                         <rect key="frame" x="0.0" y="168" width="320" height="168"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dD-Go-KcN">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="168"/>
-                                                <state key="normal" image="right_sweets_mizufusen_icecream"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="168"/>
+                                                <state key="normal" image="baby_junyu"/>
                                                 <connections>
-                                                    <action selector="tapLeftBreastFeedingButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="Pdc-LX-4dx"/>
+                                                    <action selector="tapBreastFeedingButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="NzO-ch-xhc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h13-7P-YlA">
-                                                <rect key="frame" x="160" y="0.0" width="160" height="168"/>
-                                                <state key="normal" image="left_sweets_mizufusen_icecream"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="107" height="168"/>
+                                                <state key="normal" image="baby_honyubin"/>
                                                 <connections>
-                                                    <action selector="tapRightBreastFeedingButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="jPe-9I-65Z"/>
+                                                    <action selector="tapBabyBottleButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="9QW-PN-nsH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXh-kf-DMT">
+                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="168"/>
+                                                <state key="normal" image="food_babyfood"/>
+                                                <connections>
+                                                    <action selector="tapBabyFoodButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="2vZ-j8-cjs"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXh-kf-DMT">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FH-4f-DT9">
                                         <rect key="frame" x="0.0" y="336" width="320" height="168"/>
-                                        <state key="normal" image="baby_honyubin"/>
-                                        <connections>
-                                            <action selector="tapBabyBottle80mlButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="K3o-Ff-ovo"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkQ-54-hJG">
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="168"/>
+                                                <state key="normal" title="Button" image="baby_boy11_sleep"/>
+                                                <connections>
+                                                    <action selector="tapBabySleepButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="Fpw-en-7uR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ora-yR-ufg">
+                                                <rect key="frame" x="166" y="0.0" width="154" height="168"/>
+                                                <state key="normal" title="Button" image="baby_boy05_idea"/>
+                                                <connections>
+                                                    <action selector="tapBabyWakeupButton:" destination="qzu-kY-RbE" eventType="touchUpInside" id="8rQ-Lu-eCK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -88,9 +107,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="baby_boy05_idea" width="100" height="100"/>
+        <image name="baby_boy11_sleep" width="100" height="100"/>
         <image name="baby_honyubin" width="100" height="100"/>
-        <image name="left_sweets_mizufusen_icecream" width="100" height="100"/>
-        <image name="right_sweets_mizufusen_icecream" width="100" height="100"/>
+        <image name="baby_junyu" width="100" height="100"/>
+        <image name="food_babyfood" width="100" height="100"/>
         <image name="syoubenkozou" width="100" height="100"/>
         <image name="unchi_character" width="100" height="100"/>
     </resources>

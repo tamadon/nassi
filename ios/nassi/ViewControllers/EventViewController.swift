@@ -37,21 +37,33 @@ class EventViewController: UIViewController {
         api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error ?? "fail") })
     }
 
-    @IBAction func tapRightBreastFeedingButton(_ sender: Any) {
-        let params = ["username": "母乳右", "text": "bot: :tanonda:", "icon_emoji": ":ok_woman:"]
+    @IBAction func tapBreastFeedingButton(_ sender: Any) {
+        let params = ["username": "母乳", "text": "bot: :tanonda:", "icon_emoji": ":ok_woman:"]
         let api = API(parameters: params)
         api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error ?? "fail") })
     }
 
-    @IBAction func tapLeftBreastFeedingButton(_ sender: Any) {
-        let params = ["username": "母乳左", "text": "bot: :tanonda:", "icon_emoji": ":ok_woman:"]
-        let api = API(parameters: params)
-        api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error ?? "fail") })
-    }
-
-    @IBAction func tapBabyBottle80mlButton(_ sender: Any) {
+    @IBAction func tapBabyBottleButton(_ sender: Any) {
         let viewController = MilkListViewController.initialViewController()
         present(viewController, animated: true, completion: nil)
+    }
+
+    @IBAction func tapBabyFoodButton(_ sender: Any) {
+        let params = ["username": "離乳食", "text": "bot: :tanonda:", "icon_emoji": ":fork_and_knife:"]
+        let api = API(parameters: params)
+        api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error ?? "fail") })
+    }
+    
+    @IBAction func tapBabySleepButton(_ sender: Any) {
+        let params = ["username": "寝た", "text": "bot: :tanonda:", "icon_emoji": ":sleeping:"]
+        let api = API(parameters: params)
+        api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error ?? "fail") })
+    }
+
+    @IBAction func tapBabyWakeupButton(_ sender: Any) {
+        let params = ["username": "起きた", "text": "bot: :tanonda:", "icon_emoji": ":open_mouth:"]
+        let api = API(parameters: params)
+        api.request(success: { (data: Dictionary) in debugPrint(data) }, fail: { (error: Error?) in print(error ?? "fail") })
     }
 
     @objc private func tapSlackBarButtonItem(sender: UIButton){

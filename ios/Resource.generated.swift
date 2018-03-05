@@ -63,7 +63,10 @@ extension UIImage {
 	
 	struct Asset {
 		static let ic_chat_bubble_outline_36pt: UIImage = UIImage(named: "ic_chat_bubble_outline_36pt")!
+		static let food_babyfood: UIImage = UIImage(named: "food_babyfood")!
+		static let baby_boy11_sleep: UIImage = UIImage(named: "baby_boy11_sleep")!
 		static let unchi_character: UIImage = UIImage(named: "unchi_character")!
+		static let baby_boy05_idea: UIImage = UIImage(named: "baby_boy05_idea")!
 		static let ic_play_circle_outline_36pt: UIImage = UIImage(named: "ic_play_circle_outline_36pt")!
 		static let ic_mode_edit_36pt: UIImage = UIImage(named: "ic_mode_edit_36pt")!
 		static let baby_honyubin: UIImage = UIImage(named: "baby_honyubin")!
@@ -72,6 +75,7 @@ extension UIImage {
 		static let right_sweets_mizufusen_icecream: UIImage = UIImage(named: "right_sweets_mizufusen_icecream")!
 		static let syoubenkozou: UIImage = UIImage(named: "syoubenkozou")!
 		static let left_sweets_mizufusen_icecream: UIImage = UIImage(named: "left_sweets_mizufusen_icecream")!
+		static let baby_junyu: UIImage = UIImage(named: "baby_junyu")!
 	
 	}
 	struct Resource {
