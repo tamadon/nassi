@@ -6,7 +6,7 @@ target 'nassi' do
   use_frameworks!
 
   # Pods for nassi
-  pod 'Alamofire', '~> 4.4'
+  pod 'Alamofire', '~> 5.0'
   pod 'ResourceKit'
   pod "youtube-ios-player-helper", "~> 0.1.4"
   pod "KRProgressHUD"
