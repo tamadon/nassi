@@ -8,6 +8,6 @@ target 'nassi' do
   # Pods for nassi
   pod 'Alamofire', '~> 5.0'
   pod 'ResourceKit'
-  pod "youtube-ios-player-helper", "~> 0.1.4"
+  pod "youtube-ios-player-helper", "~> 1.0.0"
   pod "KRProgressHUD"
 end
